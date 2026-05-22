@@ -65,5 +65,4 @@ def test_authenticate_user_success(setup_database, connection):
 def test_authenticate_user_nonexistent(setup_database):
     """Тест аутентификации несуществующего пользователя."""
     result = authenticate_user('nonexistent_user', 'any_password')
-    
     assert result is False
